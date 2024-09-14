@@ -1,10 +1,4 @@
-export default function Card({
-  type,
-  className,
-  image,
-  title,
-  subtitle,
-}: Cardprops) {
+export default function Card({ className, image, title, subtitle }: Cardprops) {
   return (
     <div
       className={`flex flex-col border border-[#0000001A] rounded-[6px] ${className}`}
