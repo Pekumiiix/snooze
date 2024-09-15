@@ -7,7 +7,12 @@ import JoinSection from "./_section/_home/join-section";
 export default function Home() {
   return (
     <main className="flex flex-col items-center">
-      <HeroSection />
+      <HeroSection
+        className="h-[636px] bg-[url('/assets/images/home-hero.png')]"
+        title={`Reduce Stress and Boost Mood with Snooze`}
+        description={`Guided meditations and exercises for mental well-being`}
+        button="Start your free trial"
+      />
 
       <VideoSection />
 

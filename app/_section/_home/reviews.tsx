@@ -1,4 +1,4 @@
-import ButtonComponent from "@/app/_components/button";
+import SectionDescription from "@/app/_components/section-description";
 import Image from "next/image";
 
 export default function ReviewsSection() {
@@ -6,16 +6,12 @@ export default function ReviewsSection() {
     <section className="w-full py-10 border-y border-[#0000001A] flex justify-center">
       <div className="container gap-[60px] grid grid-cols-2">
         <div className="flex flex-col gap-[60px]">
-          <div className="flex flex-col gap-6">
-            <div>
-              <p className="text-[40px] leading-[48px] text-main font-bold">
-                Client Testimonials
-              </p>
-              <p className="text-main">See what our clients have to say.</p>
-            </div>
-
-            <ButtonComponent text="Read More" />
-          </div>
+          <SectionDescription
+            type="no-image"
+            title="Client Testimonials"
+            subtitle="See what our clients have to say."
+            button="Read More"
+          />
 
           <div className="py-5 grid grid-cols-2 gap-10">
             <Cards />

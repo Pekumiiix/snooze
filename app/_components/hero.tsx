@@ -1,16 +1,28 @@
 import ButtonComponent from "./button";
 
-export default function HeroSection() {
+export default function HeroSection({
+  className = "",
+  title,
+  description,
+  button,
+}: HeroProps) {
   return (
-    <section className="min-w-full max-w-[1440px] px-0 h-[636px] flex flex-col items-center justify-center gap-6 bg-[url('/assets/images/home-hero.png')] bg-cover bg-center ">
+    <section
+      className={`min-w-full max-w-[1536px] px-0 flex flex-col items-center justify-center gap-6 bg-cover bg-center ${className}`}
+    >
       <p className="text-[40px] leading-[48px] max-w-[504px] text-white text-center">
-        Reduce Stress and Boost Mood with Snooze
+        {title}
       </p>
-      <p className="text-xl text-white">
-        Guided meditations and exercises for mental well-being
-      </p>
+      <p className="text-xl text-white">{description}</p>
 
-      <ButtonComponent className="bg-accentMain" text="Start your free trial" />
+      <ButtonComponent className="bg-accentMain" text={button} />
     </section>
   );
+}
+
+interface HeroProps {
+  className: string;
+  title: string;
+  description: string;
+  button: string;
 }
