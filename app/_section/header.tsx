@@ -1,11 +1,16 @@
+"use client";
+
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function Header() {
+  const currentPath = usePathname();
+
   return (
     <header className="w-full h-fit bg-white flex justify-center">
-      <nav className="container flex items-center justify-between py-5 px-[100px]">
+      <nav className="container flex items-center justify-between py-5">
         <div className="flex items-center gap-4">
           <Image
             src={`/assets/images/logo.png`}
@@ -20,18 +25,22 @@ export default function Header() {
         </div>
 
         <div className="flex items-center gap-10">
-          {links.map((item, index: number) => (
-            <Button
-              variant={`link`}
-              asChild
-              key={index}
-              className={`${
-                item.isActive ? "text-main underline" : "text-black"
-              } hover:text-main transition-all duration-200`}
-            >
-              <Link href={item.link}>{item.name}</Link>
-            </Button>
-          ))}
+          {links.map((item, index: number) => {
+            const isActive = currentPath === item.link;
+
+            return (
+              <Button
+                variant={`link`}
+                asChild
+                key={index}
+                className={`${
+                  isActive ? "text-main underline" : "text-black"
+                } hover:text-main transition-all duration-200`}
+              >
+                <Link href={item.link}>{item.name}</Link>
+              </Button>
+            );
+          })}
 
           <Button variant={`link`} asChild className="text-main font-medium">
             <Link href={`/login`}>Login</Link>
@@ -52,13 +61,12 @@ export default function Header() {
 interface Link {
   link: string;
   name: string;
-  isActive: boolean;
 }
 
 const links: Link[] = [
-  { link: "/", name: "Home", isActive: true },
-  { link: "/meditation", name: "Meditations", isActive: false },
-  { link: "/just-breathe", name: "Just Breathe", isActive: false },
-  { link: "/mood-tracker", name: "Mood tracker", isActive: false },
-  { link: "/profile", name: "Profile", isActive: false },
+  { link: "/", name: "Home" },
+  { link: "/meditation", name: "Meditations" },
+  { link: "/just-breathe", name: "Just Breathe" },
+  { link: "/mood-tracker", name: "Mood Tracker" },
+  { link: "/profile", name: "Profile" },
 ];

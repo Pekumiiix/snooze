@@ -3,25 +3,27 @@ import MeditationCard from "@/app/_components/med-card";
 
 export default function PersonalizedPlaylist() {
   return (
-    <section className="container flex flex-col gap-[60px] py-[60px]">
-      <SectionDescription
-        type="image"
-        image="/assets/images/med-card/personalized.png"
-        title="Personalized Playlists"
-        subtitle="Create your own playlists with your favorite tracks."
-        button=""
-      />
+    <section className="w-full flex flex-col items-center py-[60px] border-y border-[#0000000d]">
+      <div className="container flex flex-col gap-[60px]">
+        <SectionDescription
+          type="image"
+          image="/assets/images/med-card/personalized.png"
+          title="Personalized Playlists"
+          subtitle="Create your own playlists with your favorite tracks."
+          button=""
+        />
 
-      <div className="w-full flex items-center justify-between">
-        {card.map((item, index) => (
-          <MeditationCard
-            key={index}
-            type={item.type}
-            image={item.image}
-            title={item.title}
-            subtitle={item.subtitle}
-          />
-        ))}
+        <div className="w-full flex items-center justify-between">
+          {card.map((item, index) => (
+            <MeditationCard
+              key={index}
+              type={item.type}
+              image={item.image}
+              title={item.title}
+              subtitle={item.subtitle}
+            />
+          ))}
+        </div>
       </div>
     </section>
   );

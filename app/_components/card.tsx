@@ -10,12 +10,16 @@ export default function Card({
     <div
       className={`relative flex flex-col border border-[#0000001A] rounded-[6px] ${className}`}
     >
-      <img src={image} alt={title} className="h-[340px] w-full" />
+      <img
+        src={image}
+        alt={title}
+        className="h-[340px] w-full rounded-t-[6px]"
+      />
 
       <p
-        className={`${
-          type === "meditation" ? "flex" : "hidden"
-        } absolute top-0 left-0 px-2 py-1 rounded-tl-[6px] rounded-br-[6px] bg-[#0000000D] text-xs text-main font-medium`}
+        className={`${text ? "flex" : "hidden"} ${
+          type === "breathe" ? "text-white" : "text-main"
+        } absolute top-0 left-0 px-2 py-1 rounded-tl-[6px] rounded-br-[6px] bg-[#0000000D] text-xs font-medium`}
       >
         {text}
       </p>
@@ -45,7 +49,7 @@ const icons: string[] = [
 ];
 
 interface Cardprops {
-  type?: "meditation";
+  type?: "meditation" | "breathe";
   className?: string;
   image: string;
   text?: string;

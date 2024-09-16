@@ -2,7 +2,7 @@ import ProfileForm from "@/app/_components/account-form";
 
 export default function JoinSection() {
   return (
-    <section className="container grid grid-cols-2 gap-[60px] items-center py-10">
+    <section className="container grid grid-cols-2 gap-[60px] items-center py-10 border-y border-[#0000000d]">
       <div className="flex flex-col justify-center">
         <p className="text-[40px] leading-[40px] font-bold text-main">
           Join Snooze Today

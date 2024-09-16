@@ -4,7 +4,7 @@ import SectionDescription from "@/app/_components/section-description";
 
 export default function MeditationContent() {
   return (
-    <section className="container w-full py-[60px] flex gap-[60px] justify-center">
+    <section className="container w-full py-[60px] grid grid-cols-2 gap-[60px]">
       <div className="w-[590px] flex flex-col gap-[60px]">
         <SectionDescription
           type="no-image"
@@ -45,7 +45,7 @@ const lists: ListProps[] = [
     subtitle: "Listen to soothing meditation tracks.",
   },
   {
-    image: "/assets/images/med-list/1-1.png",
+    image: "/assets/images/med-list/image.png",
     title: "Calming Image",
     subtitle: "Listen to soothing meditation tracks.",
   },

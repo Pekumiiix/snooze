@@ -3,26 +3,28 @@ import SectionDescription from "@/app/_components/section-description";
 
 export default function FeaturedSection() {
   return (
-    <section className="container flex flex-col items-start py-[60px] gap-[60px]">
-      <SectionDescription
-        type="image"
-        image="/assets/images/featured/fm.png"
-        title="Featured Meditations"
-        subtitle="Curated meditations for anxiety relief"
-        button="Explore More"
-      />
+    <section className="w-full flex flex-col items-center py-[60px] border-y border-[#0000000d]">
+      <div className="container flex flex-col items-start gap-[60px]">
+        <SectionDescription
+          type="image"
+          image="/assets/images/featured/fm.png"
+          title="Featured Meditations"
+          subtitle="Curated meditations for anxiety relief"
+          button="Explore More"
+        />
 
-      <div className="grid grid-cols-3 gap-10">
-        {card.map((item, index) => (
-          <Card
-            key={index}
-            type={item.type}
-            image={item.image}
-            text={item.text}
-            title={item.title}
-            subtitle={item.subtitle}
-          />
-        ))}
+        <div className="grid grid-cols-3 gap-10">
+          {card.map((item, index) => (
+            <Card
+              key={index}
+              type={item.type}
+              image={item.image}
+              text={item.text}
+              title={item.title}
+              subtitle={item.subtitle}
+            />
+          ))}
+        </div>
       </div>
     </section>
   );
@@ -32,8 +34,8 @@ const card: Card[] = [
   {
     type: "meditation",
     image: "/assets/images/featured/1.png",
-    text: "Recommended",
     title: "Beach Meditation",
+    text: "Recommended",
     subtitle: "10 mins",
   },
   {

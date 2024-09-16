@@ -4,33 +4,35 @@ import Image from "next/image";
 
 export default function RecentMeditation() {
   return (
-    <section className="container grid grid-cols-2 gap-[60px] py-[60px]">
-      <div className="flex flex-col gap-[60px]">
-        <SectionDescription
-          type="no-image"
-          title="Recent Meditations"
-          subtitle="Keep track of your recent meditation sessions."
-          button="View All"
-        />
+    <section className="w-full flex flex-col items-center py-[60px] border-y border-[#0000000d]">
+      <div className="container grid grid-cols-2 gap-[60px]x">
+        <div className="flex flex-col gap-[60px]">
+          <SectionDescription
+            type="no-image"
+            title="Recent Meditations"
+            subtitle="Keep track of your recent meditation sessions."
+            button="View All"
+          />
 
-        <div className="flex items-center gap-10">
-          {card.map((item, index) => (
-            <MeditationCard
-              key={index}
-              image={item.image}
-              title={item.title}
-              subtitle={item.subtitle}
-            />
-          ))}
+          <div className="flex items-center gap-10">
+            {card.map((item, index) => (
+              <MeditationCard
+                key={index}
+                image={item.image}
+                title={item.title}
+                subtitle={item.subtitle}
+              />
+            ))}
+          </div>
         </div>
-      </div>
 
-      <Image
-        src={`/assets/images/med-card/recent-med.png`}
-        alt="illustration"
-        height={432}
-        width={590}
-      />
+        <Image
+          src={`/assets/images/med-card/recent-med.png`}
+          alt="illustration"
+          height={432}
+          width={590}
+        />
+      </div>
     </section>
   );
 }

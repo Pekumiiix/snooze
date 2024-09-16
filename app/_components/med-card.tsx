@@ -13,11 +13,11 @@ export default function MeditationCard({
       <div className="flex flex-col gap-2 items-center">
         <p className="text-main text-xl">{title}</p>
         <p
-          className={
+          className={`${
             type === "playlist"
               ? "font-medium text-[28px] text-main"
               : "text-[#00000080]"
-          }
+          } text-center`}
         >
           {subtitle}
         </p>

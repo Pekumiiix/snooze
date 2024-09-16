@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function ReviewsSection() {
   return (
-    <section className="w-full py-10 border-y border-[#0000001A] flex justify-center">
+    <section className="w-full py-10 border-y border-[#0000000d] flex justify-center">
       <div className="container gap-[60px] grid grid-cols-2">
         <div className="flex flex-col gap-[60px]">
           <SectionDescription
