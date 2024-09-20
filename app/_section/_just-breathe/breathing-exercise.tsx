@@ -3,7 +3,7 @@ import Card from "@/app/_components/card";
 
 export default function BreathingExercise() {
   return (
-    <section className="container flex flex-col items-start py-[60px] gap-[60px]">
+    <section className="container flex flex-col py-[60px] gap-[60px] xl:px-[50px] 2xl:px-0">
       <SectionDescription
         type="image"
         image="/assets/images/just-b/just-b.png"

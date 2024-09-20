@@ -3,7 +3,7 @@ import CostumizationForm from "@/app/_components/customization-form";
 
 export default function CustomizationOptions() {
   return (
-    <section className="container flex items-center py-[60px] gap-[60px]">
+    <section className="container flex items-center py-[60px] gap-[60px] xl:px-[50px] 2xl:px-0">
       <SectionDescription
         type="no-image"
         title="Customization Options"

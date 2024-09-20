@@ -19,7 +19,7 @@ export default function LoginPage() {
         pfp={`/assets/images/profile/avatar2.png`}
       />
 
-      <section className="container grid grid-cols-2 py-[60px] gap-[60px]">
+      <section className="container grid grid-cols-2 py-[60px] gap-[60px] xl:px-[50px] 2xl:px-0">
         <Image
           src={
             page

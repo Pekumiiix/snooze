@@ -10,7 +10,7 @@ export default function Header() {
 
   return (
     <header className="w-full h-fit bg-white flex justify-center">
-      <nav className="container flex items-center justify-between py-5">
+      <nav className="container flex items-center justify-between py-5 xl:px-[50px] 2xl:px-0">
         <div className="flex items-center gap-4">
           <Image
             src={`/assets/images/logo.png`}
@@ -24,7 +24,7 @@ export default function Header() {
           </p>
         </div>
 
-        <div className="flex items-center gap-10">
+        <div className="flex items-center xl:gap-5 2xl:gap-10">
           {links.map((item, index: number) => {
             const isActive = currentPath === item.link;
 

@@ -2,7 +2,7 @@ import ListContainer from "@/app/_components/list-container";
 
 export default function MoodGames() {
   return (
-    <section className="container grid grid-cols-2 py-[60px] gap-[60px]">
+    <section className="container grid grid-cols-2 py-[60px] gap-[60px] xl:px-[50px] 2xl:px-0">
       <p className="text-main text-[40px] font-bold leading-[48px]">
         Mood Games
       </p>

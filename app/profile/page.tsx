@@ -12,7 +12,7 @@ export default function ProfilePage() {
         name="John Doe"
       />
 
-      <section className="container grid grid-cols-2 py-[60px] gap-[60px]">
+      <section className="container grid grid-cols-2 py-[60px] gap-[60px] xl:px-[50px] 2xl:px-0">
         <div className="flex flex-col gap-[60px]">
           <SectionDescription
             type="no-image"

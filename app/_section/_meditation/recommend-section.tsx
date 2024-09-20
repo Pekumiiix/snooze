@@ -3,7 +3,7 @@ import FeaturedCard from "@/app/_components/recommended-card";
 
 export default function RecommendSection() {
   return (
-    <section className="container flex flex-col gap-[60px] py-[60px] items-start">
+    <section className="container flex flex-col gap-[60px] py-[60px] items-start xl:px-[50px] 2xl:px-0">
       <SectionDescription
         type="no-image"
         title="Recommended Meditation"

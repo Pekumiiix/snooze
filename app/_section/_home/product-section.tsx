@@ -3,8 +3,8 @@ import Image from "next/image";
 
 export default function ProductSection() {
   return (
-    <section className="container flex flex-col items-start py-10 gap-[60px]">
-      <div className="flex items-center gap-[60px]">
+    <section className="container flex flex-col py-10 gap-[60px] xl:px-[50px] 2xl:px-0">
+      <div className="flex items-center gap-[60px] w-full">
         <Image
           src={`/assets/images/key-features/kf.png`}
           alt="Key features"

@@ -10,7 +10,7 @@ export default function ProfileHero({
     <section
       className={`min-w-full max-w-[1536px] h-[288px] px-[2.5%] flex items-center justify-center gap-6 bg-cover bg-center ${className}`}
     >
-      <div className="container flex items-center justify-between">
+      <div className="container flex items-center justify-between xl:px-[50px] 2xl:px-0">
         <div className="flex items-center gap-4">
           <img
             src={pfp}

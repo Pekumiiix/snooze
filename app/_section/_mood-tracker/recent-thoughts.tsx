@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function RecentThoughts() {
   return (
-    <section className="container grid grid-cols-2 py-[60px] gap-[60px]">
+    <section className="container flex items-center justify-between py-[60px] gap-[60px] xl:px-[50px] 2xl:px-0">
       <div className="flex flex-col gap-[60px]">
         <SectionDescription
           type="no-image"
@@ -13,7 +13,7 @@ export default function RecentThoughts() {
           button="Add New"
         />
 
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col gap-5 min-w-[450px] max-w-[600px]">
           {lists.map((item, index) => (
             <ListContainer
               key={index}

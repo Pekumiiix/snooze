@@ -60,7 +60,7 @@ export default function ProfileForm() {
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className="w-full flex flex-col gap-10"
+        className="w-[590px] flex flex-col gap-10"
       >
         <FormField
           control={form.control}

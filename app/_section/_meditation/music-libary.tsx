@@ -3,7 +3,7 @@ import MeditationCard from "@/app/_components/med-card";
 
 export default function MusicLibrary() {
   return (
-    <section className="container flex flex-col gap-[60px] py-[60px]">
+    <section className="container flex flex-col gap-[60px] py-[60px] xl:px-[50px] 2xl:px-0">
       <SectionDescription
         type="image"
         image="/assets/images/med-card/music-lib.png"

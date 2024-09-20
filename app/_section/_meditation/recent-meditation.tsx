@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function RecentMeditation() {
   return (
     <section className="w-full flex flex-col items-center py-[60px] border-y border-[#0000000d]">
-      <div className="container grid grid-cols-2 gap-[60px]x">
+      <div className="container flex justify-between gap-[60px] xl:px-[50px] 2xl:px-0">
         <div className="flex flex-col gap-[60px]">
           <SectionDescription
             type="no-image"

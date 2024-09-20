@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Tracker() {
   return (
     <section className="w-full flex flex-col items-center py-[60px] border-t border-[#0000000d]">
-      <div className="container flex flex-col gap-[60px]">
+      <div className="container flex flex-col gap-[60px] xl:px-[50px] 2xl:px-0">
         <SectionDescription
           type="image"
           image="/assets/images/just-b/just-b.png"

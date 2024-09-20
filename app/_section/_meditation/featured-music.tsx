@@ -2,7 +2,7 @@ import FeaturedCard from "@/app/_components/recommended-card";
 
 export default function FeaturedMusic() {
   return (
-    <section className="container flex flex-col items-center py-[60px] gap-[60px]">
+    <section className="container flex flex-col items-center py-[60px] gap-[60px] xl:px-[50px] 2xl:px-0">
       <div className="flex flex-col items-center">
         <p className="text-main text-[40px] leading-[48px] font-bold">
           Featured Music

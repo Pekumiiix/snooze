@@ -3,7 +3,7 @@ import ListContainer from "@/app/_components/list-container";
 
 export default function TrackingOption() {
   return (
-    <section className="container grid grid-cols-2 py-[60px] gap-[60px]">
+    <section className="container grid grid-cols-2 py-[60px] gap-[60px] xl:px-[50px] 2xl:px-0">
       <SectionDescription
         type="no-image"
         title="Mood Tracking Options"

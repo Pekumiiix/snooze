@@ -4,7 +4,7 @@ import SectionDescription from "@/app/_components/section-description";
 
 export default function MeditationContent() {
   return (
-    <section className="container w-full py-[60px] grid grid-cols-2 gap-[60px]">
+    <section className="container w-full py-[60px] flex items-center justify-between gap-[60px] xl:px-[50px] 2xl:px-0">
       <div className="w-[590px] flex flex-col gap-[60px]">
         <SectionDescription
           type="no-image"
