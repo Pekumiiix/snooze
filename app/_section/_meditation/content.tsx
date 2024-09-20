@@ -50,7 +50,7 @@ const lists: ListProps[] = [
     subtitle: "Listen to soothing meditation tracks.",
   },
   {
-    image: "/assets/images/med-list/1-2.png",
+    image: "/assets/images/med-list/imagine.png",
     title: "Progress Bar",
     subtitle: "Listen to soothing meditation tracks.",
   },
